@@ -101,7 +101,8 @@ It took about a week to run inference for the review prompts, and a couple days
 to run the suggestion prompts. For some mysterious reason that we couldn't
 figure out, the longer prompt token length of the second task (suggesting
 English translation replacements) seemed to cause the parallel inference to bug
-out or crash.
+out or crash. Hence, we just used the "main" program of llama.cpp to run
+inference for the second task.
 
 Interesting trivia - the average review scores seem to follow what looks like a
 normal distribution. (At least it looked like a bell curve to the author's
